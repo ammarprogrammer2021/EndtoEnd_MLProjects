@@ -11,17 +11,30 @@ def error_message_detail(error, error_detail:sys):
 
 class CustomException(Exception):
     def __init__(self,error_message, error_detail:sys):
+<<<<<<< HEAD
         super.__init__(error_message)
+=======
+        super().__init__(error_message)
+>>>>>>> 2ef80831770913f1666859caa4704c4c8e6a361e
         self.error_message=error_message_detail(error_message, error_detail)
 
     def __str__(self):
         return self.error_message
     
+<<<<<<< HEAD
 
 if __name__ == 'main':
+=======
+if __name__ == "__main__":
+>>>>>>> 2ef80831770913f1666859caa4704c4c8e6a361e
 
     try:
         a = 1/0
     except Exception as e:
+<<<<<<< HEAD
         logging.info("Divide by zero")
         raise Exception(e, sys)
+=======
+        logging.info("Divide by Zero")
+        raise CustomException(e,sys)
+>>>>>>> 2ef80831770913f1666859caa4704c4c8e6a361e

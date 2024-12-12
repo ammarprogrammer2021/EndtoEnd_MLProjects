@@ -1,7 +1,17 @@
 pandas
+<<<<<<< HEAD
 numpy 
 seaborn
 matplotlib
 scikit-learn
 catboost
 xgboost
+=======
+seaborn
+numpy
+scikit-learn
+catboost
+xgboost
+dill
+#-e .
+>>>>>>> 2ef80831770913f1666859caa4704c4c8e6a361e
